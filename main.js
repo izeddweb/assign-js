@@ -74,12 +74,10 @@
 // let textOne = classOne.textContent;
 // let textTwo = classTwo.textContent;
 
-
 // classOne.setAttribute('title',titleTwo);
 // classTwo.setAttribute('title',titleOne);
 // classOne.textContent = textTwo;
 // classTwo.textContent = textOne;
-
 
 //   assign 5
 
@@ -98,31 +96,57 @@
 //   assign 6 challenge
 
 //Set Variable
+// const body = document.body;
+// const form = document.querySelector("form");
+// const select = document.querySelectorAll("select");
+// const inputNum = document.querySelector('input[type="number"]');
+// const inputText = document.querySelector('input[type="text"]');
+// const elements = document.querySelectorAll("option");
+// const btnCreate = document.querySelector('input[type="submit"]');
+// const results = document.querySelector(".results");
 
-const form = document.querySelector('form')
-const select = document.querySelectorAll('select')
-const inputNum = document.querySelector('input[type="number"]')
-const inputText = document.querySelector('input[type="text"]')
-const elements = document.querySelectorAll('option')
-const btn = document.querySelector('input[type="submit"]')
-const results = document.querySelector('.results')
+// btnCreate.addEventListener("click", CreateElements);
 
-btn.addEventListener('click',CreateElements)
+// //Set function
+// function CreateElements() {
+//   let elementValue;
+//   form.onsubmit = function (e) {
+//     e.preventDefault();
+//   };
+//   select.forEach((ele) => {
+//     elementValue = ele.value;
+//   });
+//   for (let i = 0; i < inputNum.value; i++) {
+//     const myDiv = document.createElement("div");
+//     myDiv.className = "box";
+//     myDiv.setAttribute("id", `id-${i + 1}`);
+//     myDiv.setAttribute("title", "element");
+//     const text = document.createTextNode(inputText.value);
+//     if (elementValue === "Div") {
+//       myDiv.style.cssText =
+//         "text-align:center;background:red;padding:10px;color:black;margin:4px;height:40px;width:250px; ";
+//     } else {
+//       myDiv.style.cssText =
+//         "text-align:center;background:blue;padding:10px;color:white;margin:4px;height:140px;width:450px;";
+//     }
+//     myDiv.appendChild(text);
+//     results.style.cssText = "display:flex;flex-wrap:wrap;";
+//     results.appendChild(myDiv);
+//   }
+// }
 
-// Set function 
-function CreateElements(){
-  let elementValue
-  form.onsubmit = function (e){
-    e.preventDefault();
-  }
-  select.forEach(ele => {
-    elementValue =ele.value
-  });
-  console.log(inputNum.value);
-  console.log(inputText.value);
-  console.log(elementValue);  
 
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
